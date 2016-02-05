@@ -1,5 +1,7 @@
 # chocolatey installer for kitematic
 
+**Work in progress:** The chocolatey package is not released yet as it depends on PR https://github.com/docker/kitematic/pull/1448
+
 [![Latest version released](https://img.shields.io/chocolatey/v/kitematic.svg)](https://chocolatey.org/packages/kitematic)
 [![Package downloads count](https://img.shields.io/chocolatey/dt/kitematic.svg)](https://chocolatey.org/packages/kitematic)
 [![Build status](https://ci.appveyor.com/api/projects/status/ymrtko1qvvpv6b5v?svg=true)](https://ci.appveyor.com/project/StefanScherer/choco-kitematic)
