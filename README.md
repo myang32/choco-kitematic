@@ -2,6 +2,7 @@
 
 [![Latest version released](https://img.shields.io/chocolatey/v/kitematic.svg)](https://chocolatey.org/packages/kitematic)
 [![Package downloads count](https://img.shields.io/chocolatey/dt/kitematic.svg)](https://chocolatey.org/packages/kitematic)
+[![Build status](https://ci.appveyor.com/api/projects/status/ymrtko1qvvpv6b5v?svg=true)](https://ci.appveyor.com/project/StefanScherer/choco-kitematic)
 
 This is a chocolatey package for Kitematic. Please see MAINTENANCE.md
 for information on how to upkeep it.
