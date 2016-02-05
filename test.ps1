@@ -11,8 +11,8 @@ if ($spec.package.metadata.version.CompareTo($version)) {
 "TEST: Package should contain only install script"
 Add-Type -assembly "system.io.compression.filesystem"
 $zip = [IO.Compression.ZipFile]::OpenRead("$pwd\kitematic.$version.nupkg")
-if ($zip.Entries.Count -ne 5) {
-  Write-Error "FAIL: Wrong count in nupkg!"
+if ($zip.Entries.Count -ne 7) {
+  Write-Error "FAIL: Wrong count ($($zip.Entries.Count)) of files in nupkg!"
 }
 $zip.Dispose()
 
