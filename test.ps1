@@ -20,13 +20,13 @@ $zip.Dispose()
 . choco install -y kitematic -source .
 
 "TEST: Binary is installed"
-if (-Not Test-Path "c:\ProgramData\chocolatey\lib\kitematic\tools\Kitematic.exe") {
+if (-Not (Test-Path "c:\ProgramData\chocolatey\lib\kitematic\tools\Kitematic.exe")) {
   Write-Error "FAIL: Binary kitematic.exe is missing!"
 }
 
 "TEST: Shortcut is installed"
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
-if (-Not Test-Path "$programs\Kitematic\Kitematic.lnk") {
+if (-Not (Test-Path "$programs\Kitematic\Kitematic.lnk")) {
   Write-Error "FAIL: Shortcut for Kitematic is missing!"
 }
 
@@ -46,7 +46,7 @@ if (Test-Path "c:\ProgramData\chocolatey\lib\kitematic\tools\Kitematic.exe") {
 
 "TEST: Shortcut is no longer installed"
 $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
-if (-Not Test-Path "$programs\Kitematic\Kitematic.lnk") {
+if (Test-Path "$programs\Kitematic\Kitematic.lnk") {
   Write-Error "FAIL: Shortcut for Kitematic is still installed!"
 }
 
