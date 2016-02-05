@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>kitematic</id>
+    <version>0.10.0</version>
+    <title>Kitematic</title>
+    <authors>Docker Contributors</authors>
+    <owners>Stefan Scherer</owners>
+    <summary>Visual Docker Container Management on Windows.</summary>
+    <description>Run containers through a simple, yet powerful graphical user interface.</description>
+    <projectUrl>https://kitematic.com</projectUrl>
+    <docsUrl>https://docs.docker.com/kitematic/userguide/</docsUrl>
+    <bugTrackerUrl>https://github.com/docker/kitematic/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/StefanScherer/choco-kitematic</packageSourceUrl>
+    <tags>Docker Kitematic</tags>
+    <licenseUrl>https://github.com/docker/kitematic/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl>https://github.com/StefanScherer/choco-kitematic/raw/master/kitematic.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
